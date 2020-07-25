@@ -5,31 +5,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        MyArrayList<Integer> myArrayList = new MyArrayList<>(15000000);
-        Random random = new Random();
-        for (int i = 0; i < 50000; i++) {
-            myArrayList.add(random.nextInt(50000));
-        }
-        System.out.println(myArrayList);
 
-//        long start1 = System.currentTimeMillis();
-//        myArrayList.bubbleSort(Comparator.naturalOrder());
-//        long end1 = System.currentTimeMillis() - start1;
-//        System.out.println(myArrayList);
-//        System.out.println("Bubble Sort Time: " + end1);
-
-//        long start2 = System.currentTimeMillis();
-//        myArrayList.selectionSort(Comparator.naturalOrder());
-//        long end2 = System.currentTimeMillis() - start2;
-//        System.out.println(myArrayList);
-//        System.out.println("Selection Sort Time: " + end2);
-
-        long start3 = System.currentTimeMillis();
-        myArrayList.insertionSort(Comparator.naturalOrder());
-        long end3 = System.currentTimeMillis() - start3;
-        System.out.println(myArrayList);
-        System.out.println("Insertion Sort Time: " + end3);
-//--------------------------------------------------------------------------------------------------------------------
 //        String[] strArr ;
 //        strArr = new String[5];
 //        String[] strArr1 ={"A", "BBBB","CCC"};
